@@ -88,9 +88,9 @@
         </div>
     </div>
     <div class="back-to-list">
-        <a asp-action="Edit" asp-route-id="@Model.Id">备注</a> 
+        <a asp-action="Edit" asp-route-id="@Model.Id">备注</a>
         <a onclick="document.referrer === '' ?
-          window.location.pathname = '/Testnet/list' :  
+          window.location.pathname = '/Testnet/list' :
           window.history.back();">返回上一页</a>
     </div>
 </div>
@@ -118,8 +118,8 @@
     </div>
 </div>
 
-@section Scripts{ 
-<script>
+@section Scripts{
+    <script>
     function copyData() {
         var item = sessionStorage.length,flag = 1;
         if (item>1) {
@@ -152,5 +152,5 @@
             $("#tBody").html(html);
         }
     }
-</script>
+    </script>
 }
